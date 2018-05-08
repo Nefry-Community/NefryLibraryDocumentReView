@@ -6,7 +6,9 @@ git clone https://github.com/Nefry-Community/NefryLibraryDocument.git
 
 cp NefryLibraryDocument/*.md Document/docs/developNefryLibrary/
 cp NefryLibraryDocument/pic/* Document/docs/developNefryLibrary/pic/
-cp articles/*.pdf Document/docs/developNefryLibrary/pdf/
+cp -f articles/*.pdf Document/docs/developNefryLibrary/pdf/
+
+echo "copy finish!"
 
 cd Document
 
