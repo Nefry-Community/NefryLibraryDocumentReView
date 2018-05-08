@@ -30,6 +30,9 @@ jobs:
       - run:
           name: chmod permissions
           command: chmod +x ./ReViewDeploy.sh
+      - add_ssh_keys:
+          fingerprints:
+            - "bb:7f:a7:d1:fb:9e:c0:39:fc:cd:f1:b8:28:e7:0d:44"
       - run:
           name: Upload to Document
           command: ./ReViewDeploy.sh
