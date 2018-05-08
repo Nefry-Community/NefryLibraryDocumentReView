@@ -8,6 +8,8 @@ cp NefryLibraryDocument/*.md Document/docs/developNefryLibrary/
 cp NefryLibraryDocument/pic/* Document/docs/developNefryLibrary/pic/
 cp articles/*.pdf Document/docs/developNefryLibrary/pdf/
 
+cd Document
+
 git remote set-url origin git@github.com:Nefry-Community/Document.git
 
 git config --global user.email "wamiwami@live.jp"
