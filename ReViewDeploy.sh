@@ -1,6 +1,6 @@
 #!/bin/sh
 
-apt-get -y install ssh
+apt-get -yq install ssh
 
 git clone https://github.com/Nefry-Community/Document.git
 git clone https://github.com/Nefry-Community/NefryLibraryDocument.git
@@ -17,10 +17,6 @@ git remote set-url origin git@github.com:Nefry-Community/Document.git
 
 git config --global user.email "wamiwami@live.jp"
 git config --global user.name "wami"
-
-git remote -v
-
-ssh -vT git@github.com
 
 git add --all
 git commit -m "[auto] commit LibraryDocument"
