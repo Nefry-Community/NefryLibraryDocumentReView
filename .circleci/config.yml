@@ -14,6 +14,15 @@ jobs:
       - run:
           name: Setup
           command: npm install
+      - run:
+          name: Build PDF
+          command: gem install md2review
+      - run:
+          name: chmod permissions
+          command: chmod +x ./md2review.sh
+      - run:
+          name: Upload to md2review
+          command: ./md2review.sh
       - save_cache:
           key: npm-cache-{{ checksum "package-lock.json" }}
           paths:
@@ -24,6 +33,7 @@ jobs:
       - run:
           name: Build PDF
           command: npm run pdf
+
       - store_artifacts:
           path: ./articles/NefryBook.pdf
           destination: NefryBook.pdf
