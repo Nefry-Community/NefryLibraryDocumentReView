@@ -1,8 +1,9 @@
 #!/bin/sh
 
+yum -y install openssh-clients
+
 git clone https://github.com/Nefry-Community/Document.git
 git clone https://github.com/Nefry-Community/NefryLibraryDocument.git
-
 
 cp NefryLibraryDocument/*.md Document/docs/developNefryLibrary/
 cp NefryLibraryDocument/pic/* Document/docs/developNefryLibrary/pic/
