@@ -1,6 +1,7 @@
 #!/bin/sh
 
 apt-get -yq install ssh
+echo -e "Host github.com\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 
 git clone https://github.com/Nefry-Community/Document.git
 git clone https://github.com/Nefry-Community/NefryLibraryDocument.git
