@@ -17,8 +17,8 @@ jobs:
       - run:
           name: Gem install md2review
           command: |
-             apt-get install ruby-dev
-             apt-get install make
+             apt-get install -y ruby-dev
+             apt-get install -y make
              gem install md2review
       - run:
           name: chmod permissions
