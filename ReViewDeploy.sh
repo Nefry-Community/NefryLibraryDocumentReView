@@ -1,6 +1,6 @@
 #!/bin/sh
 
-yum -y install openssh-clients
+apt-get -y install ssh
 
 git clone https://github.com/Nefry-Community/Document.git
 git clone https://github.com/Nefry-Community/NefryLibraryDocument.git
