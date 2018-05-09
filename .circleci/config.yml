@@ -16,7 +16,7 @@ jobs:
           command: npm install
       - run:
           name: Gem install md2review
-          command: 
+          command: |
              apt-get install ruby-dev
              apt-get install make
              gem install md2review
