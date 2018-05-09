@@ -15,8 +15,11 @@ jobs:
           name: Setup
           command: npm install
       - run:
-          name: Build PDF
-          command: gem install md2review
+          name: Gem install md2review
+          command: 
+             apt-get install ruby-dev
+             apt-get install make
+             gem install md2review
       - run:
           name: chmod permissions
           command: chmod +x ./md2review.sh
