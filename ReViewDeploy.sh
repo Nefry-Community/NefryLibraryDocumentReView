@@ -1,8 +1,5 @@
 #!/bin/sh
 
-apt-get -yq install ssh
-ssh -o "StrictHostKeyChecking=no"
-
 git clone https://github.com/Nefry-Community/Document.git
 git clone https://github.com/Nefry-Community/NefryLibraryDocument.git
 

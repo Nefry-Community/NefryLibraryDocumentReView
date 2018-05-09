@@ -34,5 +34,11 @@ jobs:
           fingerprints:
             - "bb:7f:a7:d1:fb:9e:c0:39:fc:cd:f1:b8:28:e7:0d:44"
       - run:
+          name: SSH Insta
+          command: apt-get -yq install ssh
+      - run:
+          name: SSH settings
+          command: mkdir ~/.ssh/ && echo -e "Host github.com\n\tStrictHostKeyChecking no\n" > ~/.ssh/config
+      - run:
           name: Upload to Document
           command: ./ReViewDeploy.sh
