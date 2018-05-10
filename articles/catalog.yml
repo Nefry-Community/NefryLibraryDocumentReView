@@ -3,8 +3,13 @@ PREDEF:
 
 # この順で記事が生成される
 CHAPS:
-  - start.re
-  - arduino.re
+  - Nefryライブラリとは？.md.re
+  - DataStore関連関数.md.re
+  - Console関連関数.md.re
+  - ハードウエア関連関数.md.re
+  - WiFi関連関数.md.re
+  - Nefryの便利な関数.md.re
+
 APPENDIX:
 
 POSTDEF:
