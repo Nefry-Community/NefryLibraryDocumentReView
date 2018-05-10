@@ -186,7 +186,7 @@ colophon: true
 # catalogfile: catalog.yml
 
 # 1ページの行数文字数と1kbごとのページ数を用紙サイズで指定する(A5 or B5)。
-page_metric: B5
+page_metric: A4
 #
 # あるいは、配列で指定することもできる
 # 各数字の意味は、順にリストの行数、リストの1行字数、テキストの行数、テキストの1行字数、1kバイト毎のページ数
@@ -284,7 +284,7 @@ texstyle: techbooster-doujin
 #
 # LaTeX用のdocumentclassを指定する
 # texdocumentclass: ["jsbook", "oneside,14pt,uplatex"]
-texdocumentclass: ["jsbook", "b5j,twoside,openany,uplatex"]
+texdocumentclass: ["jsbook", "a4j,twoside,openany,uplatex"]
 # texdocumentclass: ["jsbook", "a5j,twoside,openany,uplatex,9pt"]
 #
 # LaTeX用のコマンドを指定する
