@@ -41,6 +41,9 @@ jobs:
       - store_artifacts:
           path: ./articles/NefryBook.pdf
           destination: NefryBook.pdf
+      - store_artifacts:
+          path: ./articles/
+          destination: Nefry
       - run:
           name: chmod permissions
           command: chmod +x ./ReViewDeploy.sh
