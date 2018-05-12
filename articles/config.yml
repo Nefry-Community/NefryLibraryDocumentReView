@@ -310,15 +310,15 @@ pdfmaker:
   #
   # TeXコンパイル前に実行するプログラム。変換後のTeXソースを調整したいときに使用する。
   # 渡される引数1=作業用展開ディレクトリ、引数2=呼び出しを実行したディレクトリ
-  # hook_beforetexcompile: null
+  hook_beforetexcompile: ./fas ./sec
   #
   # TeXコンパイル後に実行するプログラム。索引作業をして再度コンパイルしたいときなどに使用する。
   # 渡される引数1=作業用展開ディレクトリ、引数2=呼び出しを実行したディレクトリ
-  # hook_aftertexcompile: null
+  hook_aftertexcompile: ./sec ./thr
   #
   # PDF(book.pdf)作成後に実行するプログラム。PDFに加工を施したいときに使用する。
   # 渡される引数1=作業用展開ディレクトリ、引数2=呼び出しを実行したディレクトリ
-  # hook_afterdvipdf: null
+  hook_afterdvipdf: ./thr ./four
   #
   # 画像のscale=X.Xという指定を画像拡大縮小率からページ最大幅の相対倍率に変換します。
   # image_scale2width: true
