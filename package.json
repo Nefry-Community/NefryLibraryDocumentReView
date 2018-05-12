@@ -23,7 +23,8 @@
     "pdf": "grunt pdf",
     "epub": "grunt epub",
     "web": "grunt web",
-    "html": "grunt html"
+    "html": "grunt html",
+    "latex": "grunt latex"
   },
   "dependencies": {},
   "devDependencies": {

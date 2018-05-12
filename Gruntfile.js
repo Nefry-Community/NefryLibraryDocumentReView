@@ -160,5 +160,10 @@ module.exports = grunt => {
 		"原稿をコンパイルしてepubファイルにする",
 		generateTask("epub"));
 
+	grunt.registerTask(
+		"latex",
+		"原稿をコンパイルしてepubファイルにする",
+		generateTask("latex"));
+
 	require("load-grunt-tasks")(grunt);
 };
