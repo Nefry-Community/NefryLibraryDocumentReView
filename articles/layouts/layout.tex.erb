@@ -96,12 +96,6 @@
 \lstnewenvironment{reviewcmdlst}[1][]{\lstset{backgroundcolor=\color{white}, frameround=tttt, frame=trbl, #1}}{}
 <%- end -%>
 
-<%- if @config["texstyle"] -%>
-<%-   [@config["texstyle"]].flatten.each do |x| -%>
-\usepackage{<%= x %>}
-<%-   end -%>
-<%- end -%>
-
 \newenvironment{reviewimage}{%
   \begin{figure}[H]
     \begin{center}}{%
@@ -207,6 +201,12 @@
 \newcommand{\reviewmainfont}[0]{}
 \newcommand{\reviewcolophon}[0]{\clearpage}
 \newcommand{\reviewappendix}[0]{\appendix}
+
+<%- if @config["texstyle"] -%>
+<%-   [@config["texstyle"]].flatten.each do |x| -%>
+\usepackage{<%= x %>}
+<%-   end -%>
+<%- end -%>
 
 \makeatletter
 %% maxwidth is the original width if it is less than linewidth
