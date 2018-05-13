@@ -22,7 +22,6 @@
 \usepackage{float}
 \usepackage{alltt}
 \usepackage{amsmath}
-\usepackage{techbooster-doujin}
 
 %% if you use @<u>{} (underline), use jumoline.sty
 %%\usepackage{jumoline}
@@ -215,8 +214,10 @@
 }
 \makeatother
 
-<%- if @config["usepackage"] -%>
-<%= @config["usepackage"] %>
+<%- if @config["texstyle"] -%>
+<%-   [@config["texstyle"]].flatten.each do |x| -%>
+\usepackage{<%= x %>}
+<%-   end -%>
 <%- end -%>
 
 \usepackage[T1]{fontenc}
