@@ -36,7 +36,7 @@ jobs:
           command: npm test
       - run:
           name: Build PDF
-          command: npm run latex
+          command: npm run pdf
 
       - store_artifacts:
           path: ./articles/NefryBook.pdf
