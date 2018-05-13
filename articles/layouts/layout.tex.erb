@@ -23,6 +23,12 @@
 \usepackage{alltt}
 \usepackage{amsmath}
 
+<%- if @config["texstyle"] -%>
+<%-   [@config["texstyle"]].flatten.each do |x| -%>
+\usepackage{<%= x %>}
+<%-   end -%>
+<%- end -%>
+
 %% if you use @<u>{} (underline), use jumoline.sty
 %%\usepackage{jumoline}
 
@@ -213,12 +219,6 @@
   \fi
 }
 \makeatother
-
-<%- if @config["texstyle"] -%>
-<%-   [@config["texstyle"]].flatten.each do |x| -%>
-\usepackage{<%= x %>}
-<%-   end -%>
-<%- end -%>
 
 \usepackage[T1]{fontenc}
 
