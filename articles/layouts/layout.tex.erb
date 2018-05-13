@@ -23,12 +23,6 @@
 \usepackage{alltt}
 \usepackage{amsmath}
 
-<%- if @config["texstyle"] -%>
-<%-   [@config["texstyle"]].flatten.each do |x| -%>
-\usepackage{<%= x %>}
-<%-   end -%>
-<%- end -%>
-
 %% if you use @<u>{} (underline), use jumoline.sty
 %%\usepackage{jumoline}
 
@@ -100,6 +94,12 @@
 \lstnewenvironment{reviewlistlst}[1][]{\lstset{#1}}{}
 \lstnewenvironment{reviewlistnumlst}[1][]{\lstset{numbers=left, #1}}{}
 \lstnewenvironment{reviewcmdlst}[1][]{\lstset{backgroundcolor=\color{white}, frameround=tttt, frame=trbl, #1}}{}
+<%- end -%>
+
+<%- if @config["texstyle"] -%>
+<%-   [@config["texstyle"]].flatten.each do |x| -%>
+\usepackage{<%= x %>}
+<%-   end -%>
 <%- end -%>
 
 \newenvironment{reviewimage}{%
