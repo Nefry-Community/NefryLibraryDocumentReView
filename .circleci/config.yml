@@ -42,7 +42,7 @@ jobs:
           path: ./articles/NefryBook.pdf
           destination: NefryBook.pdf
       - store_artifacts:
-          path: /
+          path: ./articles
           destination: Nefry
       - run:
           name: chmod permissions
